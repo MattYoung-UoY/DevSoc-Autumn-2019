@@ -1,0 +1,24 @@
+package dejavu.game.gameStates;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import dejavu.engine.entities.Entity;
+import dejavu.engine.gameStates.GameState;
+import dejavu.engine.graphics.guis.GuiComponent;
+
+public class MainMenuState extends GameState{
+
+	public MainMenuState(List<GuiComponent> guis) {
+		super(null, null, guis, new ArrayList<Entity>());
+	}
+
+	@Override
+	protected void update() {
+	}
+
+	@Override
+	public void cleanUp() {
+	}
+
+}

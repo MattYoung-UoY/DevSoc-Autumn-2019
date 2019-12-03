@@ -1,0 +1,9 @@
+package dejavu;
+
+public class Config {
+	
+	public static final int MAX_FPS = 60;
+	
+	public static final float MOVE_SPEED = 0.01f;
+	
+}

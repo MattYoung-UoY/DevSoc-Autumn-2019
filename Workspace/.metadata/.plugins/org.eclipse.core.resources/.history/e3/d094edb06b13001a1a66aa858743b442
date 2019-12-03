@@ -1,0 +1,21 @@
+package dejavu.game.graphics.guis;
+
+import dejavu.engine.shaders.ShaderProgram;
+
+public class GuiShader extends ShaderProgram{
+
+	public GuiShader(String vertexFile, String fragmentFile) {
+		super(vertexFile, fragmentFile);
+	}
+
+	@Override
+	protected void getAllUniformLocations() {
+		
+	}
+
+	@Override
+	protected void bindAttributes() {
+		
+	}
+
+}

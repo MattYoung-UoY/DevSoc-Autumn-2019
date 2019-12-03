@@ -1,0 +1,19 @@
+package dejavu.game.map;
+
+import org.lwjgl.opengl.Display;
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.Config;
+import dejavu.engine.graphics.Texture;
+import dejavu.game.graphics.Drawable;
+
+public class MapTile extends Drawable{
+
+	private final float TILE_SCALING = Config.MAP_TILE_SCALE / Display.getWidth();
+	
+	public MapTile(Vector2f position, Texture texture) {
+		super(new Vector3f(position.x * TILE_SCALING, position.y * TILE_SCALING, -10f), 0f, new Vector2f(Config.MAP_TILE_SCALE, Config.MAP_TILE_SCALE), texture);
+	}
+	
+}

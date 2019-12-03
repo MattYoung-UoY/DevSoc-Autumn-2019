@@ -1,0 +1,18 @@
+package dejavu.engine.graphics.guis;
+
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.engine.graphics.Texture;
+
+public class GuiComponent {
+
+	Texture texture;
+	Vector2f position, scale;
+	
+	protected GuiComponent(Vector2f position, Vector2f scale, Texture texture) {
+		this.position = position;
+		this.scale = scale;
+		this.texture = texture;
+	}
+	
+}

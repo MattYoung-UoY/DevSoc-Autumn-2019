@@ -1,0 +1,5 @@
+package dejavu.game.graphics.guis;
+
+public class StateChangeButton {
+
+}

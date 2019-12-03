@@ -1,0 +1,28 @@
+package kroy.game.gameStates;
+
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
+import kroy.engine.gameStates.GameState;
+import kroy.game.Main;
+import kroy.game.entities.FireEngine;
+import kroy.game.map.Map;
+
+public class TestState2 extends GameState{
+	
+	public TestState2(Map map, List<FireEngine> engines) {
+		super(map, engines);
+	}
+
+	@Override
+	public void update() {
+		if(Keyboard.isKeyDown(Keyboard.KEY_1)) Main.changeGameState(Main.state1);
+	}
+
+	@Override
+	public void cleanUp() {
+		
+	}
+
+}

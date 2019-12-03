@@ -1,0 +1,34 @@
+1575056168947	Rename resource 'jar'
+1575056197273	Move 2 resources to 'jars'
+1575056204836	Move 'slick-util.jar' to 'jars'
+1575056211317	Move 'slick-util-src.zip' to 'src'
+1575110178309	Delete element
+1575110588556	Rename package 'gameStates'
+1575110646395	Rename package 'maths'
+1575110662489	Rename package 'shaders'
+1575110689355	Rename package 'map'
+1575110809311	Rename package 'graphics'
+1575110966834	Rename package 'gameStates'
+1575111030397	Delete element
+1575112560779	Move compilation unit
+1575116408104	Move compilation unit
+1575117053299	Delete element
+1575118681272	Rename local variable 'tile'
+1575119760565	Rename field 'zNear'
+1575121578155	Rename type 'Mouse'
+1575123646953	Copy compilation units
+1575123650792	Delete elements
+1575123656811	Delete element
+1575124157322	Rename local variable 'coords'
+1575124167413	Rename local variable 'position'
+1575126206401	Copy package
+1575126208411	Delete element
+1575130176183	Rename resource 'Forward.png'
+1575135676024	Rename local variable 'testGui'
+1575135709742	Rename type 'TestGuiButton'
+1575136338351	Rename local variable 'testButton'
+1575136431060	Rename local variable 'GameButton'
+1575136446434	Rename type 'TestState1'
+1575136452708	Rename local variable 'gameButton'
+1575137755974	Delete element
+1575139110297	Rename type 'Character'

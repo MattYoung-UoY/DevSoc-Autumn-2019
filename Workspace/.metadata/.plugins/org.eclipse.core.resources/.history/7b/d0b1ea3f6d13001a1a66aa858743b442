@@ -1,0 +1,10 @@
+package dejavu.game.graphics.guis;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import dejavu.engine.graphics.guis.GuiComponent;
+
+public class GuiMaster {
+	
+}

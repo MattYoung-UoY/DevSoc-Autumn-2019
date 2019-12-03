@@ -1,0 +1,17 @@
+package dejavu.game.graphics.guis;
+
+import dejavu.engine.shaders.ShaderProgram;
+
+public class GuiShader extends ShaderProgram{
+
+	@Override
+	protected void getAllUniformLocations() {
+		
+	}
+
+	@Override
+	protected void bindAttributes() {
+		
+	}
+
+}

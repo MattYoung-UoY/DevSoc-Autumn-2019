@@ -1,0 +1,15 @@
+package dejavu.engine.graphics.guis;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.engine.graphics.Texture;
+import dejavu.game.graphics.Drawable;
+
+public class GuiComponent extends Drawable{
+	
+	public GuiComponent(Vector2f position, Vector2f scale, Texture texture) {
+		super(new Vector3f(position.x, position.y, -1f), 0f, scale, texture);
+	}
+	
+}

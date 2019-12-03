@@ -1,0 +1,14 @@
+package dejavu.engine.graphics.guis;
+
+import dejavu.engine.graphics.Texture;
+
+public class GuiComponent {
+
+	Texture texture;
+	Vector2f position, scale;
+	
+	protected GuiComponent(Texture texture) {
+		this.texture = texture;
+	}
+	
+}

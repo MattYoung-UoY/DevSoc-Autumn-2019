@@ -1,0 +1,17 @@
+package dejavu.game.map;
+
+import java.util.List;
+
+public class Map{
+	
+	private List<MapTile> tiles;
+	
+	public Map(List<MapTile> tiles) {
+		this.tiles = tiles;
+	}
+	
+	public List<MapTile> getTiles(){
+		return tiles;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package dejavu.engine.input;
+
+public class Mouse {
+
+}

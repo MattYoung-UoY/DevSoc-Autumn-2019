@@ -1,0 +1,9 @@
+package dejavu.engine.graphics;
+
+import org.w3c.dom.Entity;
+
+public interface Moveable{
+	
+	public void move();
+	
+}

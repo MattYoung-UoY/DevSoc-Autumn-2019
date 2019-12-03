@@ -1,0 +1,23 @@
+package dejavu.engine.gameStates;
+
+public abstract class GameState {
+
+	private Map map;
+	
+	public GameState(Map map) {
+		this.map = map;
+	}
+
+	public void updateState() {
+		update();
+	}
+	
+	protected abstract void update();
+	
+	public Map getMap() {
+		return map;
+	}
+	
+	public abstract void cleanUp();
+	
+}

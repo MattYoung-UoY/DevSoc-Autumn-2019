@@ -1,0 +1,19 @@
+package dejavu.game.graphics.guis;
+
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.engine.graphics.Texture;
+import dejavu.engine.graphics.guis.GuiButton;
+
+public class TestGuiButton extends GuiButton{
+
+	public TestGuiButton(Vector2f position, int zLayer, Vector2f scale, Texture texture) {
+		super(position, zLayer, scale, texture);
+	}
+
+	@Override
+	public void buttonClicked() {
+		this.setTexture(new Texture("res/textures/icons/snarf.png"));
+	}
+
+}

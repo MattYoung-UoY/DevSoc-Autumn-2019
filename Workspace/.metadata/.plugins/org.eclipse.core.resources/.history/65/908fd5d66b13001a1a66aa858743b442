@@ -1,0 +1,23 @@
+package dejavu.game.shaders;
+
+import dejavu.engine.shaders.ShaderProgram;
+
+public class GuiShader extends ShaderProgram{
+
+	private final static String VERTEX = "", FRAGMENT = "";
+	
+	public GuiShader() {
+		super(VERTEX, FRAGMENT);
+	}
+
+	@Override
+	protected void getAllUniformLocations() {
+		
+	}
+
+	@Override
+	protected void bindAttributes() {
+		
+	}
+
+}

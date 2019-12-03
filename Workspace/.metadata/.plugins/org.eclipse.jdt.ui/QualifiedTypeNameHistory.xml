@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.DisplayMode"/>
+<fullyQualifiedTypeName name="dejavu.game.map.Map"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+<fullyQualifiedTypeName name="dejavu.engine.input.MouseHandler"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="dejavu.Config"/>
+<fullyQualifiedTypeName name="dejavu.engine.graphics.guis.GuiButton"/>
+<fullyQualifiedTypeName name="dejavu.Main"/>
+<fullyQualifiedTypeName name="dejavu.game.graphics.guis.StateChangeButton"/>
+<fullyQualifiedTypeName name="dejavu.engine.entities.Entity"/>
+<fullyQualifiedTypeName name="dejavu.game.gameStates.GameStates"/>
+<fullyQualifiedTypeName name="dejavu.engine.graphics.Texture"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="dejavu.game.graphics.Textures"/>
+<fullyQualifiedTypeName name="dejavu.graphics.text.Text"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+</qualifiedTypeNameHistroy>

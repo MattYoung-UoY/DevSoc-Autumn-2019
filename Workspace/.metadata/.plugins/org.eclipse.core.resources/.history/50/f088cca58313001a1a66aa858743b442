@@ -1,0 +1,22 @@
+package dejavu.game.entities;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.engine.entities.Entity;
+import dejavu.engine.graphics.Texture;
+
+public class Player extends Entity{
+
+	protected Player(Vector2f position, float rotation, Vector2f size, Texture texture) {
+		super(position, rotation, size, texture);
+	}
+
+	@Override
+	public void move() {
+		if(Keyboard.isKeyDown(Keyboard.KEY_W)) {
+			this.increasePosition(0, Config.MOVE_SPEED);
+		}
+	}
+
+}

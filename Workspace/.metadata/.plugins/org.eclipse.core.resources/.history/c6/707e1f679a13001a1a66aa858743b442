@@ -1,0 +1,29 @@
+package dejavu.game.gameStates;
+
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
+import dejavu.Main;
+import dejavu.engine.entities.Entity;
+import dejavu.engine.gameStates.GameState;
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.game.entities.Player;
+import dejavu.game.map.Map;
+
+public class TestState1 extends GameState{
+	
+	public TestState1(Player player, Map map, List<GuiComponent> guis, List<Entity> entities) {
+		super(player, map, guis, entities);
+	}
+
+	@Override
+	public void update() {
+		if(Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) Main.closeGame();
+	}
+
+	@Override
+	public void cleanUp() {
+	}
+
+}

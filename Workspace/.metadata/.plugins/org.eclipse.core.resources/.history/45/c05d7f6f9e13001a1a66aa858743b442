@@ -1,0 +1,7 @@
+package dejavu.graphics.text;
+
+import dejavu.game.graphics.Drawable;
+
+public class Character extends Drawable{
+
+}

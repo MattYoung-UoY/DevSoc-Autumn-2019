@@ -1,0 +1,39 @@
+package dejavu.game.gameStates;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.Config;
+import dejavu.engine.entities.Entity;
+import dejavu.engine.graphics.Texture;
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.game.entities.Player;
+import dejavu.game.graphics.guis.ExitButton;
+import dejavu.game.graphics.guis.StateChangeButton;
+import dejavu.game.map.MainMap;
+
+public class GameStates {
+
+	List<GuiComponent> guis;
+	GuiComponent exitButton = new ExitButton(new Vector2f(-0.25f, -0.5f), 1, new Vector2f(0.5f, 0.10f),
+			new Texture("res/textures/guis/button.png"));
+	GuiComponent playButton = new StateChangeButton(new Vector2f(-0.25f, -0.2f), 1, new Vector2f(0.5f, 0.10f),
+			new Texture("res/textures/guis/button.png"),
+			new PlayState(
+					new Player(Config.START_POSITION, new Texture("res/textures/entities/player/forward.png"),
+							new Texture("res/textures/entities/player/backward.png"),
+							new Texture("res/textures/entities/player/left.png"),
+							new Texture("res/textures/entities/player/right.png")),
+					new MainMap(), new ArrayList<GuiComponent>(), new ArrayList<Entity>()));
+	
+	public final static MainMenuState menuState = new MainMenuState();
+	
+	public static void setup() {
+		guis = new ArrayList<GuiComponent>();
+		guis.add(exitButton);
+		guis.add(playButton);
+	}
+	
+}

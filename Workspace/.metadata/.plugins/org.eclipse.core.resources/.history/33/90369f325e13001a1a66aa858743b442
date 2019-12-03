@@ -1,0 +1,35 @@
+package kroy.engine.gameStates;
+
+import java.util.List;
+
+import kroy.game.entities.FireEngine;
+import kroy.game.map.Map;
+
+public abstract class GameState {
+
+	private Map map;
+	private List<FireEngine> engines;
+	
+	public GameState(Map map, List<FireEngine> engines) {
+		this.map = map;
+		this.engines = engines;
+	}
+
+	public void updateState() {
+		engines.forEach(engine -> engine.move());
+		update();
+	}
+	
+	protected abstract void update();
+	
+	public Map getMap() {
+		return map;
+	}
+	
+	public List<FireEngine> getEngines(){
+		return engines;
+	}
+	
+	public abstract void cleanUp();
+	
+}

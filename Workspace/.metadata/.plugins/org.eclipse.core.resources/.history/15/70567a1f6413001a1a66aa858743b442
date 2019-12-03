@@ -1,0 +1,16 @@
+package dejavu.game.map;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.Config;
+import dejavu.engine.graphics.Texture;
+import dejavu.game.graphics.Drawable;
+
+public class MapTile extends Drawable{
+
+	public MapTile(Vector2f position, Texture texture) {
+		super(new Vector3f(position.x * Config.MAP_TILE_SCALE, position.y * Config.MAP_TILE_SCALE, (float) Config.MAP_Z_PLANE / Config.NUM_Z_PLANES), 0f, new Vector2f(1, 1), texture);
+	}
+	
+}

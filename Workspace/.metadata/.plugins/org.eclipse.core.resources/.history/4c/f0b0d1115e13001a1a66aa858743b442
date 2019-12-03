@@ -1,0 +1,8 @@
+package kroy.engine.graphics;
+
+public interface Moveable {
+	
+	public void move();
+		
+	
+}

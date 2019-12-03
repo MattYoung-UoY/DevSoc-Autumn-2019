@@ -1,0 +1,30 @@
+package dejavu.engine.gameStates;
+
+import java.util.List;
+
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.game.map.Map;
+
+public abstract class GameState {
+
+	private Map map;
+	private List<GuiComponent> guis;
+	
+	public GameState(Map map, List<GuiComponent> guis) {
+		this.map = map;
+		this.guis = guis;
+	}
+
+	public void updateState() {
+		update();
+	}
+	
+	protected abstract void update();
+	
+	public Map getMap() {
+		return map;
+	}
+	
+	public abstract void cleanUp();
+	
+}

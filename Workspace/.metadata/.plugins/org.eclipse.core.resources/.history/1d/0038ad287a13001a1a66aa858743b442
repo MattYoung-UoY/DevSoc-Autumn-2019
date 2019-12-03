@@ -1,0 +1,29 @@
+package dejavu.game.graphics.guis;
+
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.engine.graphics.Texture;
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.engine.input.MouseHandler;
+
+public class GuiButton extends GuiComponent{
+
+	public GuiButton(Vector2f position, int zLayer, Vector2f scale, Texture texture) {
+		super(position, zLayer, scale, texture);
+	}
+
+	@Override
+	public void update() {
+		if(MouseHandler.getKey() == MouseHandler.MOUSE_LEFT) {
+			Vector2f coords = MouseHandler.getCoords();
+			Vector2f position = new Vector2f(super.getPosition().x, super.getPosition().y);
+			Vector2f scale = super.getSize();
+			if(coords.x > position.x && coords.x < position.x + scale.x) {
+				if(coords.y > position.y && coords.y < position.y + scale.y) {
+					
+				}
+			}
+		}
+	}
+
+}

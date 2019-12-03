@@ -1,0 +1,5 @@
+package dejavu.game.gameStates;
+
+public class MainMenuState {
+
+}

@@ -1,0 +1,11 @@
+package dejavu.engine.input;
+
+public class Mouse {
+
+	public static final int MOUSE_LEFT = 1, MOUSE_RIGHT = 0;
+	
+	public static update() {
+		
+	}
+	
+}

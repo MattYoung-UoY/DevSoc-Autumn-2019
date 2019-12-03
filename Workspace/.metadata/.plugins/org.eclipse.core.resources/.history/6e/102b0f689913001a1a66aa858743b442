@@ -1,0 +1,85 @@
+package dejavu;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lwjgl.opengl.Display;
+import org.lwjgl.util.vector.Vector2f;
+
+import dejavu.engine.gameStates.GameState;
+import dejavu.engine.graphics.Camera;
+import dejavu.engine.graphics.DisplayManager;
+import dejavu.engine.graphics.Loader;
+import dejavu.engine.graphics.Render;
+import dejavu.engine.graphics.Texture;
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.engine.graphics.guis.GuiImage;
+import dejavu.engine.input.MouseHandler;
+import dejavu.game.gameStates.MainMenuState;
+import dejavu.game.graphics.guis.ExitButton;
+
+public class Main {
+
+	private static boolean running = true;
+
+	private static GameState currentGameState;
+
+	public static Texture roadVert, grass, flowers;
+
+	private static Camera camera;
+
+	public static void main(String[] args) {
+
+		DisplayManager.createDisplay();
+
+		Render renderer = new Render();
+		camera = new Camera(new Vector2f(-Config.START_POSITION.x, -Config.START_POSITION.y));
+		renderer.setCamera(camera);
+		
+		List<GuiComponent> guis = new ArrayList<GuiComponent>();
+		GuiComponent testImage = new GuiImage(new Vector2f(-0.9f, 0.6f), 2, new Vector2f(0.15f, 0.15f), new Texture("res/textures/icons/snarf32.png"));
+		GuiComponent testButton = new ExitButton(new Vector2f(-0.9f, 0.4f), 1, new Vector2f(0.5f, 0.10f), new Texture("res/textures/guis/button.png"));
+		guis.add(testImage);
+		guis.add(testButton);
+		
+		currentGameState = new MainMenuState(guis);
+
+		while (!Display.isCloseRequested() && running) {
+
+			MouseHandler.update();
+			
+			currentGameState.updateState();
+
+			renderer.prepare();
+			renderer.render(currentGameState);
+
+			DisplayManager.updateDisplay();
+		}
+
+		currentGameState.cleanUp();
+		renderer.cleanUp();
+		Loader.cleanUp();
+		DisplayManager.closeDisplay();
+
+	}
+
+	public static void increaseCameraPosition(Vector2f deltaPos) {
+		Vector2f startPos = camera.getPosition();
+		Vector2f nextPos = new Vector2f(startPos.x + deltaPos.x, startPos.y + deltaPos.y);
+		camera.setPosition(nextPos);
+	}
+
+	public static void setCameraPosition(Vector2f pos) {
+		camera.setPosition(pos);
+	}
+
+	public static void changeGameState(GameState nextState) {
+		currentGameState.cleanUp();
+		currentGameState = nextState;
+	}
+
+	public static void closeGame() {
+		running = false;
+	}
+	
+}

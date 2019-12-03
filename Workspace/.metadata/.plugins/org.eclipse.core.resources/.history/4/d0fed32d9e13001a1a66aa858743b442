@@ -1,0 +1,22 @@
+package dejavu.game.map;
+
+import dejavu.engine.graphics.Texture;
+
+public class MainMap extends Map {
+
+	private static Texture[] tileTextures = { 
+			new Texture("res/textures/tiles/snowGrass.png")};
+
+	private static int[][] tileMap = { 
+			{ 0, 0, 0, 0, 0 }, 
+			{ 0, 0, 0, 0, 0 }, 
+			{ 0, 0, 0, 0, 0 }, 
+			{ 0, 0, 0, 0, 0 },
+			{ 0, 0, 0, 0, 0 } 
+			};
+	
+	public MainMap() {
+		super(tileTextures, tileMap);
+	}
+
+}

@@ -1,0 +1,37 @@
+package dejavu.engine.input;
+
+import org.lwjgl.input.Mouse;
+import org.lwjgl.util.vector.Vector2f;
+
+public class MouseHandler {
+
+	public static final int MOUSE_LEFT = 0, MOUSE_RIGHT = 1;
+	
+	private static int key = -1;
+	
+	private static Vector2f coords = new Vector2f(0, 0);
+	
+	public static void update() {
+		getButtonDown();
+		getMouseCoords();
+	}
+	
+	private static void getButtonDown() {
+		key = -1;
+		while(Mouse.next()) if(Mouse.getEventButtonState()) key = Mouse.getEventButton();
+	}
+	
+	private static void getMouseCoords() {
+		coords.x = Mouse.getX();
+		coords.y = Mouse.getY();
+	}
+	
+	public static int getKey() {
+		return key;
+	}
+	
+	public static Vector2f getCoords() {
+		return coords;
+	}
+	
+}

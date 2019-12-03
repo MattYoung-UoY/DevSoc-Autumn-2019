@@ -1,0 +1,27 @@
+package dejavu.game.graphics;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import dejavu.engine.graphics.Texture;
+
+public class Textures {
+
+	public static Texture playerForward, playerBackward, playerLeft, playerRight, button, snowGrass;
+	public static Map<Character, Texture> font1Chars;
+	
+	public static void setup() {
+		playerForward = new Texture("res/textures/entities/player/forward.png");
+		playerBackward = new Texture("res/textures/entities/player/backward.png");
+		playerLeft = new Texture("res/textures/entities/player/left.png");
+		playerRight = new Texture("res/textures/entities/player/right.png");
+		button = new Texture("res/textures/guis/button.png");
+		snowGrass = new Texture("res/textures/tiles/snowGrass.png");
+		
+		font1Chars = new HashMap<Character, Texture>();
+		font1Chars.put('a', new Texture("res/textures/fonts/font1/a.png"));
+		font1Chars.put('b', new Texture("res/textures/fonts/font1/b.png"));
+		font1Chars.put('c', new Texture("res/textures/fonts/font1/c.png"));
+	}
+	
+}

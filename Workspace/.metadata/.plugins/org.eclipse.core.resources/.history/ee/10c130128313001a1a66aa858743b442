@@ -1,0 +1,22 @@
+package dejavu.game.entities;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.engine.entities.Entity;
+import dejavu.engine.graphics.Texture;
+
+public class Player extends Entity{
+
+	protected Player(Vector2f position, float rotation, Vector2f size, Texture texture) {
+		super(new Vector3f(position.x, position.y, -5f), rotation, size, texture);
+	}
+
+	@Override
+	public void move() {
+		
+	}
+
+	
+	
+}

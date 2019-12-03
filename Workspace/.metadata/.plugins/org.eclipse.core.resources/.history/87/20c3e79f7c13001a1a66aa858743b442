@@ -1,0 +1,8 @@
+package dejavu.engine.graphics.guis;
+
+@FunctionalInterface
+public interface CodeRunner {
+
+	public void run();
+	
+}

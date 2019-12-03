@@ -1,0 +1,15 @@
+package dejavu.game.entities;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.engine.graphics.Texture;
+import dejavu.game.graphics.Drawable;
+
+public abstract class Entity extends Drawable{
+
+	protected Entity(Vector3f position, float rotation, Vector2f size, Texture texture) {
+		super(position, rotation, size, texture);
+	}
+	
+}

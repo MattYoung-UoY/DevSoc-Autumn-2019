@@ -1,0 +1,25 @@
+package kroy.game.graphics;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import kroy.engine.graphics.Moveable;
+import kroy.engine.graphics.Texture;
+
+public class ParticleEffect extends Drawable implements Moveable{
+
+	private Vector2f velocity;
+	private float renderTime;
+	
+	protected ParticleEffect(Vector2f position, Vector2f size, Texture texture, Vector2f velocity, float renderTime) {
+		super(new Vector3f(position.x,position.y,-0.5f), 0f, size, texture);
+		this.velocity = velocity;
+		this.renderTime = renderTime;
+	}
+
+	@Override
+	public void move() {
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package dejavu.game.map;
+
+import java.util.List;
+
+import dejavu.engine.graphics.Texture;
+
+public class Map{
+	
+	private List<MapTile> tileList;
+	
+	private Texture[] tiles = {
+			new Texture("res/textures/tiles/straightRoadVert.png"),
+			new Texture("res/textures/tiles/straightRoadHoriz.png"),
+			new Texture("res/textures/tiles/grass.png"),
+			new Texture("res/textures/tiles/flowers.png"),
+			};
+	
+	private int[][] tileMap = {
+			{3, 3, 1, 3, 3},
+			{3, 3, 1, 3, 3},
+			{3, 3, 1, 3, 3},
+			{3, 3, 1, 3, 3},
+			{3, 3, 1, 3, 3}
+	};
+	
+	public Map() {
+		for(int i = 0; i < tileMap.length; i++) {
+			int[] subList = tileMap[i];
+			for(int j = 0; j < tileMap[i].length; j++) {
+				
+			}
+		}
+	}
+	
+	public List<MapTile> getTiles(){
+		return tileList;
+	}
+	
+}

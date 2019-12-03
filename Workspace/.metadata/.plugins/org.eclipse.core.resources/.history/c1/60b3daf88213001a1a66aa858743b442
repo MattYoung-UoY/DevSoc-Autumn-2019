@@ -1,0 +1,14 @@
+package dejavu.game.entities;
+
+import dejavu.engine.entities.Entity;
+
+public class Player extends Entity{
+
+	@Override
+	public void move() {
+		
+	}
+
+	
+	
+}

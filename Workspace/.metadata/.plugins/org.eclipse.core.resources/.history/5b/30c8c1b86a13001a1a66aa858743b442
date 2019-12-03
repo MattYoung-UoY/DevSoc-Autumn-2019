@@ -1,0 +1,5 @@
+package dejavu.engine.graphics.guis;
+
+public class GuiComponent {
+
+}

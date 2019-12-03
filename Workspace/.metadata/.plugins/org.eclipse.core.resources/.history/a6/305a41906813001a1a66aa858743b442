@@ -1,0 +1,16 @@
+package dejavu.game.map;
+
+import dejavu.engine.graphics.Texture;
+
+public class MainMap extends Map {
+
+	public MainMap() {
+		 tiles = new Texture[] {
+					new Texture("res/textures/tiles/straightRoadVert.png"),
+					new Texture("res/textures/tiles/straightRoadHoriz.png"),
+					new Texture("res/textures/tiles/grass.png"),
+					new Texture("res/textures/tiles/flowers.png"),
+					};
+	}
+
+}

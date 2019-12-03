@@ -1,0 +1,16 @@
+package kroy.game.map;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import kroy.engine.graphics.Texture;
+import kroy.game.Config;
+import kroy.game.graphics.Drawable;
+
+public class MapTile extends Drawable{
+
+	public MapTile(Vector2f position, Texture texture) {
+		super(new Vector3f(position.x * Config.X_UNIT, position.y * Config.Y_UNIT, (float) Config.MAP_Z_PLANE / Config.NUM_Z_PLANES), 0f, new Vector2f(1, 1), texture);
+	}
+	
+}

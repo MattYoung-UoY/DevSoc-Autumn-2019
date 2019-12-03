@@ -1,0 +1,16 @@
+package dejavu.game.graphics;
+
+import dejavu.engine.graphics.Texture;
+
+public class Textures {
+
+	public static Texture playerForward, playerBackward, playerLeft, playerRight, button, snowGrass;
+	
+	public static void setup() {
+		playerForward = new Texture("res/textures/entities/player/forward.png");
+		playerBackward = new Texture("res/textures/entities/player/backward.png");
+		playerLeft = new Texture("res/textures/entities/player/left.png");
+		playerRight = new Texture("res/textures/entities/player/right.png");
+	}
+	
+}

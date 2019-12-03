@@ -1,0 +1,11 @@
+package dejavu.graphics.text;
+
+import org.lwjgl.util.vector.Vector2f;
+
+public class Text {
+
+	public Text(Vector2f start, float fontSize, String text) {
+		
+	}
+	
+}

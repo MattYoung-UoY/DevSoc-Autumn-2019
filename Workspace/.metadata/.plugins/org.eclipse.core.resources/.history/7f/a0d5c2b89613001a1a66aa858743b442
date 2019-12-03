@@ -1,0 +1,26 @@
+package dejavu.game.gameStates;
+
+import java.util.List;
+
+import dejavu.engine.entities.Entity;
+import dejavu.engine.gameStates.GameState;
+import dejavu.engine.graphics.guis.GuiComponent;
+import dejavu.game.entities.Player;
+import dejavu.game.map.Map;
+
+public class MainMenuState extends GameState{
+
+	public MainMenuState(Player player, Map map, List<GuiComponent> guis, List<Entity> entities) {
+		super(player, map, guis, entities);
+	}
+
+	@Override
+	protected void update() {
+		
+	}
+
+	@Override
+	public void cleanUp() {
+	}
+
+}

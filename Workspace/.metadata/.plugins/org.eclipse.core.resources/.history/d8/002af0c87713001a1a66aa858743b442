@@ -1,0 +1,20 @@
+package dejavu.engine.input;
+
+public class Mouse {
+
+	public static final int MOUSE_LEFT = 1, MOUSE_RIGHT = 0;
+	
+	private int key = -1;
+	
+	public static void update() {
+		getButtonDown();
+	}
+	
+	private static void getButtonDown() {
+		key = -1;
+		while(MouseHandler.next()) {
+			
+		}
+	}
+	
+}

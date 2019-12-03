@@ -1,0 +1,24 @@
+package dejavu.game.shaders;
+
+import dejavu.engine.shaders.ShaderProgram;
+
+public class EntityShader extends ShaderProgram{
+
+	private final static String VERTEX = "res/shaders/entities/vertex.glsl", 
+			FRAGMENT = "res/shaders/entities/fragment.glsl";
+
+	public EntityShader() {
+		super(VERTEX, FRAGMENT);
+	}
+
+	@Override
+	protected void getAllUniformLocations() {
+		
+	}
+
+	@Override
+	protected void bindAttributes() {
+		
+	}
+
+}

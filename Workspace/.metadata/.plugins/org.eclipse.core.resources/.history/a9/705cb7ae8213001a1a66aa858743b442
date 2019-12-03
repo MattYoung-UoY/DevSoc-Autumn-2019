@@ -1,0 +1,7 @@
+package dejavu.engine.graphics;
+
+public interface Moveable {
+	
+	public abstract void move();
+	
+}

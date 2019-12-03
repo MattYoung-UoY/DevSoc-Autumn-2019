@@ -1,0 +1,24 @@
+package dejavu.graphics.text;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.game.graphics.Textures;
+
+public class Text {
+
+	private List<Character> chars;
+	
+	public Text(Vector2f start, float zPos, float fontSize, String text) {
+		chars = new ArrayList<Character>();
+		char[] tempChars = text.toCharArray();
+		for(int i = 0; i < tempChars.length; i++) {
+			
+			chars.add(new Character(new Vector3f(start.x + (i * fontSize), start.y, zPos), fontSize, Textures.snowGrass));
+		}
+	}
+	
+}

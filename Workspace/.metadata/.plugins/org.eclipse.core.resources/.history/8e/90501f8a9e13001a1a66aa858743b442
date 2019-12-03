@@ -1,0 +1,15 @@
+package dejavu.graphics.text;
+
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+
+import dejavu.engine.graphics.Texture;
+import dejavu.game.graphics.Drawable;
+
+public class Character extends Drawable{
+
+	protected Character(Vector3f position, Vector2f size, Texture tecture) {
+		super(position, 0f, size, texture);
+	}
+
+}
